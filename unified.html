@@ -1288,6 +1288,7 @@
         cursor: pointer;
       }
     </style>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   </head>
 
   <body>
@@ -1301,7 +1302,7 @@
         alt="Illustration"
       />
     </div>
-    <div class="container  unified_container " role="presentation">
+    <div class="container unified_container" role="presentation">
       <div class="row">
         <div class="col-lg-6">
           <div class="panel panel-default">
@@ -1320,15 +1321,13 @@
                   aria-label="Sign in with your email address"
                 >
                   <div class="intro">
-                    <h2 aria-level="1">
-                      Sign in with your email address
-                    </h2>
+                    <h2 aria-level="1">Sign in with your email address</h2>
                   </div>
                   <div
                     class="error pageLevel"
                     aria-hidden="true"
                     role="alert"
-                    style="display: none;"
+                    style="display: none"
                   >
                     <p></p>
                   </div>
@@ -1338,7 +1337,7 @@
                         class="error itemLevel"
                         aria-hidden="true"
                         role="alert"
-                        style="display: none;"
+                        style="display: none"
                       >
                         <p></p>
                       </div>
@@ -1357,7 +1356,7 @@
                       <div
                         class="error itemLevel"
                         aria-hidden="true"
-                        style="display: none;"
+                        style="display: none"
                       >
                         <p role="alert"></p>
                       </div>
@@ -1401,7 +1400,7 @@
 <script>
   let divPass = document.createElement('div');
   divPass.setAttribute('class', 'password-input__icon');
-  $(document).ready(function() {
+  $(document).ready(function () {
     makePasswordShow(true, 'show-pw', divPass);
     makePasswordShow(false, 'hide-pw', divPass);
     const password = document.getElementById('password');
